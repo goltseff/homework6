@@ -1,0 +1,4 @@
+      <div *ngFor="let zver of zveryata">
+        <ng-container *ngTemplateOutlet="parentTemplate; context: { $implicit: zver }">
+        </ng-container>
+      </div>

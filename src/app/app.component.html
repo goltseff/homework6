@@ -1,0 +1,13 @@
+<h1>Задание 1: Unless dirictive</h1>
+<app-test-unless *appUnless="false">false</app-test-unless>
+<app-test-unless *appUnless="true">true</app-test-unless>
+<h1>Задание 2: вывод списка в дочернем компоненте</h1>
+<app-display-list [zveryata]="zveryata">
+      <ng-template let-zver>
+          <div class="zver">
+            <strong>{{ zver }}</strong>
+          </div>
+        </ng-template>      
+</app-display-list>
+<h1 appMyTooltip="тут тултип">Задание 3: тултип</h1>
+<div appMyTooltip="и тут тултип">тут еще один тултип</div>
